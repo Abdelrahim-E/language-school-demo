@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abdelrahim-e.github.io/language-school-demo/sitemap.xml

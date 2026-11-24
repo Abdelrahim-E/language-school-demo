@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mina English Academy | English classes in Alexandria</title>
+<meta name="description" content="English groups of eight in Alexandria, from A1 to C1. Take a 12-question level check and see the timetable. Demo project.">
+<link rel="canonical" href="https://abdelrahim-e.github.io/language-school-demo/">
+<meta name="theme-color" content="#FAF6EF">
+<meta property="og:title" content="Mina English Academy | English classes in Alexandria">
+<meta property="og:description" content="Groups of eight, levels A1 to C1. Find your starting level in eight minutes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://abdelrahim-e.github.io/language-school-demo/">
+<meta property="og:image" content="https://abdelrahim-e.github.io/language-school-demo/og.png">
+<meta property="og:image:alt" content="Mina English Academy, English classes in Alexandria">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_EG">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LanguageSchool","name":"Mina English Academy (demo)","description":"Demo project: a fictional English language school in Alexandria, Egypt.","address":{"@type":"PostalAddress","addressLocality":"Alexandria","addressCountry":"EG"},"availableLanguage":["en","ar"],"openingHours":"Sa-Th 09:00-21:00, Fr 09:00-15:00"}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237A2E6E'/%3E%3Cpath d='M9 23V10l7 8 7-8v13' fill='none' stroke='white' stroke-width='2.6' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<header class="top">
+  <div class="wrap bar">
+    <a href="#top" class="logo" data-i18n="logo">Mina English Academy</a>
+    <nav id="nav" aria-label="Main" data-i18n-aria="navlabel">
+      <a href="#level" data-i18n="n1">Level check</a>
+      <a href="#groups" data-i18n="n2">Groups</a>
+      <a href="#teachers" data-i18n="n3">Teachers</a>
+      <a href="#fees" data-i18n="n4">Fees</a>
+      <a href="#faq" data-i18n="n5">Questions</a>
+    </nav>
+    <button class="lang" id="langBtn" type="button" aria-label="Switch to Arabic" lang="ar">ع</button>
+    <a href="#register" class="btn small" data-i18n="cta">Join a group</a>
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <h1 data-i18n="h1">English classes in Alexandria, with eight seats in every room.</h1>
+      <p class="lead" data-i18n="hp">Evening and Friday groups from complete beginner to advanced. Take the 12-question check below to see where you would start.</p>
+      <div class="actions">
+        <a href="#level" class="btn" data-i18n="hb1">Take the level check</a>
+        <a href="#groups" class="plain" data-i18n="hb2">See the timetable</a>
+      </div>
+    </div>
+    <aside class="ladder-box" aria-labelledby="ladTitle">
+      <h2 id="ladTitle" data-i18n="lad_t">What each level lets you do</h2>
+      <ol class="ladder">
+        <li style="--i:0"><b>A1</b><span data-i18n="la1">Introduce yourself, order food, ask for directions.</span></li>
+        <li style="--i:1"><b>A2</b><span data-i18n="la2">Talk about your day, last weekend and your plans.</span></li>
+        <li style="--i:2"><b>B1</b><span data-i18n="la3">Manage travel, small talk at work and simple emails.</span></li>
+        <li style="--i:3"><b>B2</b><span data-i18n="la4">Follow a meeting, write a clear email, join a debate.</span></li>
+        <li style="--i:4"><b>C1</b><span data-i18n="la5">Argue a point, read the news and write reports with ease.</span></li>
+      </ol>
+    </aside>
+  </div>
+</section>
+
+<section id="level" class="sec tint">
+  <div class="wrap split">
+    <div>
+      <h2 data-i18n="q_t">Find your starting level</h2>
+      <p class="lead" data-i18n="q_p">Twelve questions, about eight minutes. It is a starting point: a teacher confirms your level in a short talk before you pay anything.</p>
+    </div>
+    <div class="quiz" id="quiz">
+      <div id="qView">
+        <noscript><p>The level check needs JavaScript. You can also ask for a level talk with the form further down.</p></noscript>
+      </div>
+      <div id="rView" hidden tabindex="-1" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section id="groups" class="sec">
+  <div class="wrap">
+    <div class="head">
+      <h2 data-i18n="g_t">Groups and timetable</h2>
+      <p class="lead" data-i18n="g_p">A new group opens on the first Sunday of every month. Every group has at most eight students.</p>
+    </div>
+    <div class="filters">
+      <div class="field">
+        <label for="fLevel" data-i18n="f_level">Level</label>
+        <select id="fLevel">
+          <option value="all" data-i18n="f_all">All levels</option>
+          <option value="A1">A1</option><option value="A2">A2</option><option value="B1">B1</option><option value="B2">B2</option><option value="C1">C1</option>
+          <option value="IELTS" data-i18n="ielts">IELTS preparation</option>
+        </select>
+      </div>
+      <fieldset>
+        <legend data-i18n="f_time">Time of day</legend>
+        <div class="seg">
+          <label><input type="radio" name="slot" value="all" checked><span data-i18n="t_all">Any time</span></label>
+          <label><input type="radio" name="slot" value="morning"><span data-i18n="t_m">Morning</span></label>
+          <label><input type="radio" name="slot" value="evening"><span data-i18n="t_e">Evening</span></label>
+          <label><input type="radio" name="slot" value="friday"><span data-i18n="t_f">Friday</span></label>
+        </div>
+      </fieldset>
+    </div>
+    <p class="count" id="count" role="status"></p>
+    <div class="tbl-wrap">
+      <table id="tbl">
+        <caption class="sr" data-i18n="cap1">Groups starting next month, with days, times and free seats</caption>
+        <thead>
+          <tr><th scope="col" data-i18n="th1">Level</th><th scope="col" data-i18n="th2">Course</th><th scope="col" data-i18n="th3">Days</th><th scope="col" data-i18n="th4">Time</th><th scope="col" data-i18n="th5">Seats</th><th scope="col"><span class="sr" data-i18n="th6">Action</span></th></tr>
+        </thead>
+        <tbody>
+          <tr data-level="A1" data-slot="morning"><th scope="row">A1</th><td><span data-i18n="ge">General English</span></td><td class="days" data-days="6,1,3">Sat, Mon, Wed</td><td class="tm" dir="ltr">10:00 – 11:30</td><td class="seats" data-n="3">3 seats left</td><td><button type="button" class="link pick" data-i18n="ask">Ask about this group</button></td></tr>
+          <tr data-level="A1" data-slot="evening"><th scope="row">A1</th><td><span data-i18n="ge">General English</span></td><td class="days" data-days="0,2">Sun, Tue</td><td class="tm" dir="ltr">18:00 – 20:30</td><td class="seats" data-n="6">6 seats left</td><td><button type="button" class="link pick" data-i18n="ask">Ask about this group</button></td></tr>
+          <tr data-level="A2" data-slot="morning"><th scope="row">A2</th><td><span data-i18n="ge">General English</span></td><td class="days" data-days="0,2">Sun, Tue</td><td class="tm" dir="ltr">10:00 – 12:30</td><td class="seats" data-n="5">5 seats left</td><td><button type="button" class="link pick" data-i18n="ask">Ask about this group</button></td></tr>
+          <tr data-level="A2" data-slot="evening"><th scope="row">A2</th><td><span data-i18n="ge">General English</span></td><td class="days" data-days="6,1,3">Sat, Mon, Wed</td><td class="tm" dir="ltr">18:30 – 20:00</td><td class="seats" data-n="2">2 seats left</td><td><button type="button" class="link pick" data-i18n="ask">Ask about this group</button></td></tr>
+          <tr data-level="B1" data-slot="evening"><th scope="row">B1</th><td><span data-i18n="ge">General English</span></td><td class="days" data-days="0,2">Sun, Tue</td><td class="tm" dir="ltr">18:00 – 20:30</td><td class="seats" data-n="4">4 seats left</td><td><button type="button" class="link pick" data-i18n="ask">Ask about this group</button></td></tr>
+          <tr data-level="B1" data-slot="friday"><th scope="row">B1</th><td><span data-i18n="ge">General English</span></td><td class="days" data-days="5">Fri</td><td class="tm" dir="ltr">10:00 – 14:00</td><td class="seats" data-n="7">7 seats left</td><td><button type="button" class="link pick" data-i18n="ask">Ask about this group</button></td></tr>
+          <tr data-level="B2" data-slot="evening"><th scope="row">B2</th><td><span data-i18n="ge">General English</span></td><td class="days" data-days="6,1,3">Sat, Mon, Wed</td><td class="tm" dir="ltr">18:30 – 20:00</td><td class="seats" data-n="5">5 seats left</td><td><button type="button" class="link pick" data-i18n="ask">Ask about this group</button></td></tr>
+          <tr data-level="B2" data-slot="friday"><th scope="row">B2</th><td><span data-i18n="ge">General English</span></td><td class="days" data-days="5">Fri</td><td class="tm" dir="ltr">10:00 – 14:00</td><td class="seats" data-n="1">1 seat left</td><td><button type="button" class="link pick" data-i18n="ask">Ask about this group</button></td></tr>
+          <tr data-level="C1" data-slot="evening"><th scope="row">C1</th><td><span data-i18n="ge">General English</span></td><td class="days" data-days="0,2">Sun, Tue</td><td class="tm" dir="ltr">18:00 – 20:30</td><td class="seats" data-n="8">8 seats left</td><td><button type="button" class="link pick" data-i18n="ask">Ask about this group</button></td></tr>
+          <tr data-level="IELTS" data-slot="evening"><th scope="row" data-i18n="ielts_s">IELTS</th><td><span data-i18n="ielts">IELTS preparation</span></td><td class="days" data-days="6,1">Sat, Mon</td><td class="tm" dir="ltr">17:30 – 20:00</td><td class="seats" data-n="4">4 seats left</td><td><button type="button" class="link pick" data-i18n="ask">Ask about this group</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="empty" id="empty" hidden data-i18n="empty">No group matches this mix. Try another time of day, or ask us about a new group.</p>
+  </div>
+</section>
+
+<section class="sec tint">
+  <div class="wrap">
+    <h2 data-i18n="m_t">How a group works</h2>
+    <div class="facts">
+      <div><p class="big">8</p><p><b data-i18n="m1b">Eight seats at most.</b> <span data-i18n="m1">Everyone speaks in every class. Nobody hides at the back.</span></p></div>
+      <div><p class="big" data-i18n="m2n">10 weeks</p><p><b data-i18n="m2b">One level takes ten weeks.</b> <span data-i18n="m2">It ends with a short speaking check with your teacher, not a long exam.</span></p></div>
+      <div><p class="big" data-i18n="m3n">2 days</p><p><b data-i18n="m3b">Homework comes back marked.</b> <span data-i18n="m3">Written work is returned within two working days, with notes you can use.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="teachers" class="sec">
+  <div class="wrap split">
+    <div>
+      <h2 data-i18n="t_t">Your teachers</h2>
+      <p class="lead" data-i18n="t_p">Each teacher keeps the same group for the full ten weeks.</p>
+    </div>
+    <ul class="people">
+      <li><h3 data-i18n="p1">Nada Farouk</h3><p class="meta" data-i18n="p1r">A1 to B2 groups, 11 years of teaching</p><p data-i18n="p1d">Starts the first levels almost entirely in English and keeps Arabic ready for the moment someone is truly stuck.</p></li>
+      <li><h3 data-i18n="p2">Mark Reilly</h3><p class="meta" data-i18n="p2r">C1 and IELTS preparation</p><p data-i18n="p2d">From Leeds, living in Alexandria since 2016. Marks every IELTS writing task himself.</p></li>
+      <li><h3 data-i18n="p3">Heba Mansour</h3><p class="meta" data-i18n="p3r">A2 and B1 groups, Friday classes</p><p data-i18n="p3d">A former primary-school teacher. Her classes are mostly pair work, so you talk more than you listen.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="fees" class="sec tint">
+  <div class="wrap">
+    <h2 data-i18n="fe_t">Fees</h2>
+    <p class="lead" data-i18n="fe_p">Prices are demo figures. The level check and the first talk with a teacher are free.</p>
+    <div class="tbl-wrap">
+      <table class="fees">
+        <caption class="sr" data-i18n="cap2">Monthly fees by type of course</caption>
+        <thead><tr><th scope="col" data-i18n="fh1">Course</th><th scope="col" data-i18n="fh2">Fee</th><th scope="col" data-i18n="fh3">Notes</th></tr></thead>
+        <tbody>
+          <tr><th scope="row" data-i18n="fr1">General English, evening or morning</th><td data-i18n="fp1">EGP 1,200 per month</td><td data-i18n="fn1">Books are EGP 350 per level, paid once.</td></tr>
+          <tr><th scope="row" data-i18n="fr2">General English, Friday group</th><td data-i18n="fp2">EGP 1,000 per month</td><td data-i18n="fn2">Four hours each Friday.</td></tr>
+          <tr><th scope="row" data-i18n="fr3">IELTS preparation</th><td data-i18n="fp3">EGP 1,800 per month</td><td data-i18n="fn3">Includes one full practice test each month.</td></tr>
+          <tr><th scope="row" data-i18n="fr4">Private lesson</th><td data-i18n="fp4">EGP 400 per hour</td><td data-i18n="fn4">Book at least two days ahead.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="sec">
+  <div class="wrap narrow">
+    <h2 data-i18n="fq_t">Before you join</h2>
+    <details><summary data-i18n="q1">Do I have to take the level check first?</summary><p data-i18n="a1">No. It only saves time. If you skip it, a teacher asks you a few questions on your first visit and suggests a group.</p></details>
+    <details><summary data-i18n="q2">Can I change group after I start?</summary><p data-i18n="a2">Yes, during the first two weeks, if a seat is free in the group you want.</p></details>
+    <details><summary data-i18n="q3">Are the classes online?</summary><p data-i18n="a3">No. All groups meet in person at our school in Alexandria.</p></details>
+    <details><summary data-i18n="q4">What if I miss a class?</summary><p data-i18n="a4">Send us a message before the class and your teacher shares the notes and the homework with you.</p></details>
+    <details><summary data-i18n="q5">Do you teach children?</summary><p data-i18n="a5">Not at the moment. Our groups are for students aged 16 and over.</p></details>
+  </div>
+</section>
+
+<section id="register" class="sec tint">
+  <div class="wrap split">
+    <div>
+      <h2 data-i18n="r_t">Ask for a place</h2>
+      <p class="lead" data-i18n="r_p">Tell us the level and time you prefer. We call you within one working day to confirm a group.</p>
+    </div>
+    <form id="form" class="rf" novalidate>
+      <label for="nm" data-i18n="l1">Full name</label>
+      <input id="nm" autocomplete="name">
+      <label for="ph" data-i18n="l2">Phone</label>
+      <input id="ph" type="tel" autocomplete="tel" inputmode="tel" dir="ltr">
+      <label for="lv" data-i18n="l3">Level</label>
+      <select id="lv">
+        <option value="unsure" data-i18n="lv0">I am not sure yet</option>
+        <option value="A1">A1</option><option value="A2">A2</option><option value="B1">B1</option><option value="B2">B2</option><option value="C1">C1</option>
+        <option value="IELTS" data-i18n="ielts">IELTS preparation</option>
+      </select>
+      <label for="tm" data-i18n="l4">Preferred time</label>
+      <select id="tm">
+        <option value="any" data-i18n="t_all">Any time</option>
+        <option value="morning" data-i18n="t_m">Morning</option>
+        <option value="evening" data-i18n="t_e">Evening</option>
+        <option value="friday" data-i18n="t_f">Friday</option>
+      </select>
+      <label class="chk consent"><input type="checkbox" id="ok"><span data-i18n="consent">I agree to be contacted about this request. <a href="privacy.html">Privacy and cookies</a></span></label>
+      <p class="msg" id="msg" role="status"></p>
+      <button class="btn" type="submit" data-i18n="send">Send my request</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap fgrid">
+    <div><a href="#top" class="logo" data-i18n="logo">Mina English Academy</a><p data-i18n="fd">English classes in Alexandria, Egypt.</p></div>
+    <div><b data-i18n="fa">Opening hours</b><p data-i18n="fo1">Saturday to Thursday, 9 am to 9 pm</p><p data-i18n="fo2">Friday, 9 am to 3 pm</p></div>
+    <div><b data-i18n="fc">Contact</b><p dir="ltr">+20 100 000 0000</p><p dir="ltr">hello@minaenglish.example</p></div>
+  </div>
+  <div class="wrap credit">
+    <p data-i18n="rights">© 2026 Mina English Academy. Demo project, not a real school. Prices, teachers and dates are examples.</p>
+    <p><a href="privacy.html" data-i18n="privlink">Privacy and cookies</a></p>
+    <p><a href="https://wa.me/201210963651?text=Hi%2C%20I%20saw%20your%20Mina%20English%20demo%20and%20would%20like%20a%20website%20for%20my%20business." target="_blank" rel="noopener" data-i18n="cr">Want a site like this? Message the developer</a></p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
